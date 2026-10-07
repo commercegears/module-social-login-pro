@@ -1,0 +1,106 @@
+{
+    "tagline": "Add Apple, Microsoft, LinkedIn, Amazon and GitHub sign-in to Softaware Social Login — same buttons, same settings, same account rules.",
+    "key_features": [
+        "Sign in with Apple",
+        "Microsoft personal, work and school accounts",
+        "LinkedIn (OpenID Connect)",
+        "Login with Amazon",
+        "GitHub for developer audiences",
+        "Every ID token validated",
+        "Hyvä and Luma button icons",
+        "Settings in the same Social Login section"
+    ],
+    "benefits": [
+        {
+            "icon": "bolt",
+            "title": "The accounts your customers use",
+            "text": "Apple for iPhone users, Microsoft and LinkedIn for business buyers, Amazon for shoppers, GitHub for developers."
+        },
+        {
+            "icon": "shield",
+            "title": "Strict where it matters",
+            "text": "Apple's client secret is signed per request, ID tokens are checked against each provider's keys, and unverified emails are never trusted."
+        },
+        {
+            "icon": "cart",
+            "title": "Nothing new to learn",
+            "text": "The five providers join the existing buttons, placements, Connected Accounts page and admin grid of Social Login."
+        }
+    ],
+    "showcase": [
+        {
+            "label": "Sign-in page",
+            "title": "Eight providers in one row",
+            "text": "Apple, Microsoft, LinkedIn, Amazon and GitHub appear next to Google, Facebook and X, in the order you choose.",
+            "image": "docs/images/sign-in-luma.png"
+        },
+        {
+            "label": "Hyvä",
+            "title": "Native Hyvä buttons",
+            "text": "Each provider brings its own icon for the Luma and Hyvä templates of Social Login.",
+            "image": "docs/images/sign-in-hyva.png"
+        },
+        {
+            "label": "Mobile",
+            "title": "Full-width rows on phones",
+            "text": "Buttons stack on small screens, where Sign in with Apple is often the quickest way in.",
+            "image": "docs/images/mobile.png"
+        },
+        {
+            "label": "Apple settings",
+            "title": "Sign in with Apple, set up in minutes",
+            "text": "Paste the Services ID, Team ID, Key ID and the .p8 key. The client secret is created and signed for every request.",
+            "image": "docs/images/admin-apple.png"
+        },
+        {
+            "label": "Microsoft settings",
+            "title": "Personal and organisation accounts",
+            "text": "The common tenant by default, or limit sign-in to consumers, organisations or your own tenant.",
+            "image": "docs/images/admin-microsoft.png"
+        }
+    ],
+    "feature_groups": [
+        {
+            "title": "Apple",
+            "items": [
+                "Client secret signed per request (ES256)",
+                "form_post callback with the session restored",
+                "Name from the first authorisation",
+                "Hidden email: the shopper completes it once"
+            ]
+        },
+        {
+            "title": "Microsoft",
+            "items": [
+                "Personal, work and school accounts",
+                "Tenant: common, consumers, organisations or yours",
+                "PKCE and tenant-checked ID tokens",
+                "Email trusted only when verified"
+            ]
+        },
+        {
+            "title": "LinkedIn, Amazon and GitHub",
+            "items": [
+                "LinkedIn OpenID Connect with JWKS validation",
+                "Login with Amazon with PKCE",
+                "GitHub with verified addresses only",
+                "Exact callback URL shown for each"
+            ]
+        }
+    ],
+    "demo": {
+        "storefront": [
+            {
+                "label": "Luma storefront",
+                "url": "https://demo.softawarecommerce.com/customer/account/login/",
+                "image": "docs/images/sign-in-luma.png"
+            },
+            {
+                "label": "Hyvä storefront",
+                "url": "https://demo.softawarecommerce.com/hyva/customer/account/login/",
+                "image": "docs/images/sign-in-hyva.png"
+            }
+        ]
+    },
+    "related": ["softaware/module-social-login"]
+}

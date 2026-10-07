@@ -7,7 +7,7 @@ troubleshooting) see the Social Login user guide; it applies to these providers 
 
 - Changelog: [CHANGELOG.md](../CHANGELOG.md) · Questions: [FAQ](faq.md)
 
-![Sign-in page with all providers](images/01-luma-sign-in.png)
+![Sign-in page with all providers](images/sign-in-luma.png)
 
 ## 1. Requirements
 
@@ -50,7 +50,7 @@ When you set **Enabled = Yes**, the **callback URL** for the current store view 
 example `https://www.example.com/sociallogin/auth/callback/provider/apple/`. Register it at the provider **exactly
 as shown**; with several store views or domains, register one per store view URL.
 
-![Apple settings with the callback URL](images/05-admin-provider-apple.png)
+![Apple settings with the callback URL](images/admin-apple.png)
 
 ## 4. Setting up the providers
 
@@ -107,9 +107,9 @@ customers enter their password once to connect Amazon.
 The default sort orders keep this order: Google (10), Apple (20), Facebook (30), Microsoft (40), GitHub (50),
 LinkedIn (60), Amazon (70), X (80). Change **Sort Order** to rearrange.
 
-| Hyvä mobile | Connected Accounts |
+| Hyvä | Mobile |
 | --- | --- |
-| ![Hyvä mobile sign-in page](images/03-hyva-mobile.png) | ![Connected Accounts](images/04-connected-accounts.png) |
+| ![Hyvä sign-in page](images/sign-in-hyva.png) | ![Mobile sign-in page](images/mobile.png) |
 
 ## 6. Checking the installation
 

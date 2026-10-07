@@ -7,7 +7,7 @@ extension; no provider SDKs or JWT libraries are installed. Works with Luma-base
 
 Package `softaware/module-social-login-pro`, module `Softaware_SocialLoginPro`.
 
-![Sign-in page with all providers](docs/images/01-luma-sign-in.png)
+![Sign-in page with all providers](docs/images/sign-in-luma.png)
 
 - [User guide](docs/user-guide.md) (installation, provider setup, compatibility) · [FAQ](docs/faq.md) ·
   [Changelog](CHANGELOG.md)
