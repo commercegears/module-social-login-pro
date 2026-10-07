@@ -1,0 +1,25 @@
+Apple,Apple
+"Services ID","Services ID"
+"The identifier of the Services ID, e.g. <code>com.example.shop.signin</code> (not the App ID).","The identifier of the Services ID, e.g. <code>com.example.shop.signin</code> (not the App ID)."
+"Team ID","Team ID"
+"Key ID","Key ID"
+"Private Key (.p8)","Private Key (.p8)"
+"Paste the whole contents of the .p8 file, including the BEGIN/END lines. Stored encrypted.","Paste the whole contents of the .p8 file, including the BEGIN/END lines. Stored encrypted."
+"Leave empty for ""Continue with Apple"".","Leave empty for ""Continue with Apple""."
+Microsoft,Microsoft
+"Application (client) ID","Application (client) ID"
+Tenant,Tenant
+"<code>common</code> (work, school and personal accounts), <code>consumers</code>, <code>organizations</code> or your tenant ID.","<code>common</code> (work, school and personal accounts), <code>consumers</code>, <code>organizations</code> or your tenant ID."
+"Leave empty for ""Continue with Microsoft"".","Leave empty for ""Continue with Microsoft""."
+GitHub,GitHub
+"Leave empty for ""Continue with GitHub"".","Leave empty for ""Continue with GitHub""."
+LinkedIn,LinkedIn
+"Leave empty for ""Continue with LinkedIn"".","Leave empty for ""Continue with LinkedIn""."
+Amazon,Amazon
+"Leave empty for ""Continue with Amazon"".","Leave empty for ""Continue with Amazon""."
+"Sign in with Apple is not configured correctly.","Sign in with Apple is not configured correctly."
+"Apple Developer > Certificates, Identifiers & Profiles: create a Services ID with ""Sign in with Apple"", add your domain and this URL as Return URL, and create a key with ""Sign in with Apple"" enabled.","Apple Developer > Certificates, Identifiers & Profiles: create a Services ID with ""Sign in with Apple"", add your domain and this URL as Return URL, and create a key with ""Sign in with Apple"" enabled."
+"Microsoft Entra admin centre > App registrations: register an app for ""Accounts in any organisational directory and personal Microsoft accounts"", add this URL as a ""Web"" redirect URI and create a client secret.","Microsoft Entra admin centre > App registrations: register an app for ""Accounts in any organisational directory and personal Microsoft accounts"", add this URL as a ""Web"" redirect URI and create a client secret."
+"GitHub > Settings > Developer settings > OAuth Apps: create an app and enter this URL as ""Authorization callback URL"".","GitHub > Settings > Developer settings > OAuth Apps: create an app and enter this URL as ""Authorization callback URL""."
+"LinkedIn Developers > your app > Products: add ""Sign In with LinkedIn using OpenID Connect""; under Auth add this URL to ""Authorized redirect URLs"".","LinkedIn Developers > your app > Products: add ""Sign In with LinkedIn using OpenID Connect""; under Auth add this URL to ""Authorized redirect URLs""."
+"Amazon Developer Console > Login with Amazon: create a security profile and add this URL under Web Settings > ""Allowed Return URLs"".","Amazon Developer Console > Login with Amazon: create a security profile and add this URL under Web Settings > ""Allowed Return URLs""."

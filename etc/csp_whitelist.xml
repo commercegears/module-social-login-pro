@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+    The "Connect" buttons in My Account post to this store, which then redirects to the provider.
+    Browsers apply form-action to that redirect, so the providers' sign-in hosts are allowed here.
+-->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="form-action">
+            <values>
+                <value id="sw_social_apple" type="host">appleid.apple.com</value>
+                <value id="sw_social_microsoft" type="host">login.microsoftonline.com</value>
+                <value id="sw_social_github" type="host">github.com</value>
+                <value id="sw_social_linkedin" type="host">www.linkedin.com</value>
+                <value id="sw_social_amazon" type="host">www.amazon.com</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>
