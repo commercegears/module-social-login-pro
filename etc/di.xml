@@ -52,7 +52,7 @@
     <virtualType name="Softaware\SocialLoginPro\Model\Config\Comment\MicrosoftCallbackUrl" type="Softaware\SocialLogin\Model\Config\Comment\CallbackUrl">
         <arguments>
             <argument name="providerCode" xsi:type="string">microsoft</argument>
-            <argument name="hint" xsi:type="string">Microsoft Entra admin centre &gt; App registrations: register an app for "Accounts in any organisational directory and personal Microsoft accounts", add this URL as a "Web" redirect URI and create a client secret.</argument>
+            <argument name="hint" xsi:type="string">Microsoft Entra admin centre &gt; Entra ID &gt; App registrations: register an app for "Any Entra ID Tenant + Personal Microsoft accounts", add this URL as a "Web" redirect URI under Authentication and create a client secret under Certificates &amp; secrets.</argument>
         </arguments>
     </virtualType>
     <virtualType name="Softaware\SocialLoginPro\Model\Config\Comment\GithubCallbackUrl" type="Softaware\SocialLogin\Model\Config\Comment\CallbackUrl">

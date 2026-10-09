@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.1 (2026-10-09)
+
+### Changed
+
+- Microsoft setup hint in the admin and docs uses the current Microsoft Entra admin centre names (Entra ID > App
+  registrations, account type "Any Entra ID Tenant + Personal Microsoft accounts", Authentication, Certificates &
+  secrets).
+- Docs: product page and Composer key links point to softawarecommerce.com (the shop moved from
+  shop.softawarecommerce.com); the product page tagline says Social Login is free and has no dashes.
+- Doc screenshots retaken without the Magento logo of the Hyvä default theme.
+- With Social Login 1.4.0, the "open this page in your browser" note for Instagram, Facebook and other in-app
+  browsers also covers the Pro providers (no change needed in this module).
+
 ## 1.0.0 (2026-10-07)
 
 First release. Add-on for Softaware Social Login 1.3+.

@@ -5,6 +5,8 @@ Facebook and X. This guide covers installation, the setup of each provider and c
 (where the buttons appear, popup or redirect, accounts, Connected Accounts, admin tools, CLI, privacy and
 troubleshooting) see the Social Login user guide; it applies to these providers too.
 
+- Product page: https://softawarecommerce.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
+- Social Login (free, required): https://softawarecommerce.com/shop/magento-2-extensions/social-login-for-magento-2/
 - Changelog: [CHANGELOG.md](../CHANGELOG.md) · Questions: [FAQ](faq.md)
 
 ![Sign-in page with all providers](images/sign-in-luma.png)
@@ -20,8 +22,9 @@ troubleshooting) see the Social Login user guide; it applies to these providers 
 
 ## 2. Installation
 
-With Composer, using the access keys from your account on shop.softawarecommerce.com (if the SoftAware repository
-is already configured for Social Login, only the `composer require` line is needed):
+With Composer, using the Composer keys from your account on softawarecommerce.com (My account > Composer keys,
+https://softawarecommerce.com/my-modules/keys/). If the SoftAware repository is already configured for Social Login, only the `composer require`
+line is needed:
 
 ```bash
 composer config repositories.softaware composer https://repo.softawarecommerce.com
@@ -69,9 +72,11 @@ If name or email is missing, the customer completes a short form once.
 
 ### Microsoft
 
-1. Microsoft Entra admin centre > **App registrations** > New registration: choose "Accounts in any organisational
-   directory and personal Microsoft accounts" (or narrower, matching the **Tenant** you set below).
-2. Add the callback URL as a **Web** redirect URI and create a **client secret**.
+1. Microsoft Entra admin centre > **Entra ID** > **App registrations** > New registration: under "Supported account
+   types" choose "Any Entra ID Tenant + Personal Microsoft accounts" (or narrower, matching the **Tenant** you set
+   below).
+2. Under **Authentication** add the callback URL as a **Web** redirect URI, and under **Certificates & secrets**
+   create a **client secret**.
 3. In Magento enter the **Application (client) ID** and **Client Secret**. **Tenant**: `common` (work, school and
    personal accounts, default), `consumers` (personal only), `organizations` (work and school only) or your tenant
    ID (only your organisation).

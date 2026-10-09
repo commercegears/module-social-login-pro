@@ -9,6 +9,7 @@ Package `softaware/module-social-login-pro`, module `Softaware_SocialLoginPro`.
 
 ![Sign-in page with all providers](docs/images/sign-in-luma.png)
 
+- Product page: https://softawarecommerce.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
 - [User guide](docs/user-guide.md) (installation, provider setup, compatibility) · [FAQ](docs/faq.md) ·
   [Changelog](CHANGELOG.md)
 
@@ -58,8 +59,8 @@ Register the callback URL shown under each provider's **Enabled** field exactly 
 
 - **Apple**: Services ID with "Sign in with Apple" (domain + return URL), a key with "Sign in with Apple";
   enter Services ID, Team ID, Key ID and paste the .p8 file.
-- **Microsoft**: App registration for "any organisational directory and personal Microsoft accounts", Web
-  redirect URI, client secret.
+- **Microsoft**: Microsoft Entra admin centre > Entra ID > App registrations, "Any Entra ID Tenant + Personal
+  Microsoft accounts", Web redirect URI, client secret.
 - **GitHub**: OAuth App, "Authorization callback URL".
 - **LinkedIn**: product "Sign In with LinkedIn using OpenID Connect", authorised redirect URL.
 - **Amazon**: Login with Amazon security profile, "Allowed Return URLs".
