@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2 (2026-10-09)
+
+### Changed
+- Docs: no dashes as punctuation in headings and version ranges.
+
 ## 1.0.1 (2026-10-09)
 
 ### Changed

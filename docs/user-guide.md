@@ -1,4 +1,4 @@
-# Social Login Pro for Magento 2 — User Guide
+# Social Login Pro for Magento 2: User Guide
 
 Social Login Pro adds **Apple, Microsoft, LinkedIn, Amazon and GitHub** to Softaware Social Login, next to Google,
 Facebook and X. This guide covers installation, the setup of each provider and compatibility. For everything else
@@ -15,8 +15,8 @@ troubleshooting) see the Social Login user guide; it applies to these providers 
 
 | | |
 | --- | --- |
-| Magento | Open Source or Adobe Commerce 2.4.7 – 2.4.9 |
-| PHP | 8.2 – 8.5 with `ext-openssl` and `ext-json` |
+| Magento | Open Source or Adobe Commerce 2.4.7 to 2.4.9 |
+| PHP | 8.2 to 8.5 with `ext-openssl` and `ext-json` |
 | Themes | Luma, Blank and themes based on them; Hyvä 1.3+ |
 | Other | `softaware/module-social-login` 1.3 or later and `softaware/module-core` (installed automatically) |
 
@@ -128,7 +128,7 @@ includes the sections "Social Login Pro providers" and "Sign in with Apple clien
 ## 7. Compatibility
 
 - Softaware Social Login 1.3 or later (required), Softaware Customer Approval (optional, via Social Login).
-- Magento Open Source / Adobe Commerce 2.4.7 – 2.4.9, PHP 8.2 – 8.5.
+- Magento Open Source / Adobe Commerce 2.4.7 to 2.4.9, PHP 8.2 to 8.5.
 - Luma, Blank and Luma-based themes; Hyvä 1.3+ (tested with 1.5). The Hyvä checkout uses the Luma checkout
   fallback, so the checkout buttons are the Luma ones.
 

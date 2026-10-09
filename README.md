@@ -68,7 +68,7 @@ Register the callback URL shown under each provider's **Enabled** field exactly 
 ## Compatibility
 
 - Requires `softaware/module-social-login` ^1.3 and `softaware/module-core` ^1.0.
-- Magento Open Source / Adobe Commerce 2.4.7 – 2.4.9, PHP 8.2 – 8.5, ext-openssl.
+- Magento Open Source / Adobe Commerce 2.4.7 to 2.4.9, PHP 8.2 to 8.5, ext-openssl.
 - Luma, Blank and themes based on them; Hyvä 1.3+ (tested with Hyvä 1.5). The module has no templates of its own;
   the buttons are rendered by Social Login's Luma and Hyvä templates.
 
