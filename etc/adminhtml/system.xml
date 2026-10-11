@@ -19,9 +19,13 @@
                 </field>
                 <field id="team_id" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Team ID</label>
+                    <comment><![CDATA[10 letters and digits.]]></comment>
+                    <validate>validate-alphanum minimum-length-10 maximum-length-10</validate>
                 </field>
                 <field id="key_id" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Key ID</label>
+                    <comment><![CDATA[10 letters and digits.]]></comment>
+                    <validate>validate-alphanum minimum-length-10 maximum-length-10</validate>
                 </field>
                 <field id="private_key" translate="label comment" type="obscure" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Private Key (.p8)</label>
@@ -31,10 +35,11 @@
                 <field id="label" translate="label comment" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Button Label</label>
                     <comment><![CDATA[Leave empty for "Continue with Apple".]]></comment>
+                    <validate>validate-no-html-tags maximum-length-60</validate>
                 </field>
                 <field id="sort_order" translate="label comment" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Sort Order</label>
-                    <validate>validate-number</validate>
+                    <validate>validate-digits validate-digits-range digits-range-0-9999</validate>
                 </field>
             </group>
             <group id="microsoft" translate="label" type="text" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -59,10 +64,11 @@
                 <field id="label" translate="label comment" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Button Label</label>
                     <comment><![CDATA[Leave empty for "Continue with Microsoft".]]></comment>
+                    <validate>validate-no-html-tags maximum-length-60</validate>
                 </field>
                 <field id="sort_order" translate="label comment" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Sort Order</label>
-                    <validate>validate-number</validate>
+                    <validate>validate-digits validate-digits-range digits-range-0-9999</validate>
                 </field>
             </group>
             <group id="github" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -83,10 +89,11 @@
                 <field id="label" translate="label comment" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Button Label</label>
                     <comment><![CDATA[Leave empty for "Continue with GitHub".]]></comment>
+                    <validate>validate-no-html-tags maximum-length-60</validate>
                 </field>
                 <field id="sort_order" translate="label comment" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Sort Order</label>
-                    <validate>validate-number</validate>
+                    <validate>validate-digits validate-digits-range digits-range-0-9999</validate>
                 </field>
             </group>
             <group id="linkedin" translate="label" type="text" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -107,10 +114,11 @@
                 <field id="label" translate="label comment" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Button Label</label>
                     <comment><![CDATA[Leave empty for "Continue with LinkedIn".]]></comment>
+                    <validate>validate-no-html-tags maximum-length-60</validate>
                 </field>
                 <field id="sort_order" translate="label comment" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Sort Order</label>
-                    <validate>validate-number</validate>
+                    <validate>validate-digits validate-digits-range digits-range-0-9999</validate>
                 </field>
             </group>
             <group id="amazon" translate="label" type="text" sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -131,10 +139,11 @@
                 <field id="label" translate="label comment" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Button Label</label>
                     <comment><![CDATA[Leave empty for "Continue with Amazon".]]></comment>
+                    <validate>validate-no-html-tags maximum-length-60</validate>
                 </field>
                 <field id="sort_order" translate="label comment" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Sort Order</label>
-                    <validate>validate-number</validate>
+                    <validate>validate-digits validate-digits-range digits-range-0-9999</validate>
                 </field>
             </group>
         </section>

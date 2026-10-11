@@ -88,19 +88,5 @@
             ]
         }
     ],
-    "demo": {
-        "storefront": [
-            {
-                "label": "Luma storefront",
-                "url": "https://demo.softawarecommerce.com/customer/account/login/",
-                "image": "docs/images/sign-in-luma.png"
-            },
-            {
-                "label": "Hyvä storefront",
-                "url": "https://demo.softawarecommerce.com/hyva/customer/account/login/",
-                "image": "docs/images/sign-in-hyva.png"
-            }
-        ]
-    },
     "related": ["softaware/module-social-login"]
 }

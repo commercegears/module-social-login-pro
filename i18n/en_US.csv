@@ -23,3 +23,4 @@ Amazon,Amazon
 "GitHub > Settings > Developer settings > OAuth Apps: create an app and enter this URL as ""Authorization callback URL"".","GitHub > Settings > Developer settings > OAuth Apps: create an app and enter this URL as ""Authorization callback URL""."
 "LinkedIn Developers > your app > Products: add ""Sign In with LinkedIn using OpenID Connect""; under Auth add this URL to ""Authorized redirect URLs"".","LinkedIn Developers > your app > Products: add ""Sign In with LinkedIn using OpenID Connect""; under Auth add this URL to ""Authorized redirect URLs""."
 "Amazon Developer Console > Login with Amazon: create a security profile and add this URL under Web Settings > ""Allowed Return URLs"".","Amazon Developer Console > Login with Amazon: create a security profile and add this URL under Web Settings > ""Allowed Return URLs""."
+"10 letters and digits.","10 letters and digits."
