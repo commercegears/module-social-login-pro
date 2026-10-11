@@ -2,10 +2,10 @@
 
 **What does Social Login Pro add?**
 Sign in and registration with Apple, Microsoft (personal, work and school accounts), LinkedIn, Amazon and GitHub,
-in addition to Google, Facebook and X from Softaware Social Login.
+in addition to Google, Facebook and X from CommerceGears Social Login.
 
-**Do I need Softaware Social Login as well?**
-Yes. Social Login Pro is an add-on: it requires `softaware/module-social-login` 1.3 or later, which Composer installs
+**Do I need CommerceGears Social Login as well?**
+Yes. Social Login Pro is an add-on: it requires `commercegears/module-social-login` 1.3 or later, which Composer installs
 automatically. All settings outside the provider groups (where the buttons appear, popup or redirect, accounts,
 Connected Accounts, admin tools) come from Social Login and apply to the Pro providers too.
 

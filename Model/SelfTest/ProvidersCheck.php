@@ -1,20 +1,20 @@
 <?php
 /**
- * Softaware Social Login Pro
+ * CommerceGears Social Login Pro
  *
- * @copyright Copyright (c) Softaware Commerce (https://www.softawarecommerce.co.uk/)
+ * @copyright Copyright (c) CommerceGears (https://www.commercegearscommerce.co.uk/)
  */
 declare(strict_types=1);
 
-namespace Softaware\SocialLoginPro\Model\SelfTest;
+namespace CommerceGears\SocialLoginPro\Model\SelfTest;
 
 use Magento\Store\Model\StoreManagerInterface;
-use Softaware\SocialLogin\Model\AuthRequest;
-use Softaware\SocialLogin\Model\Provider\AbstractProvider;
-use Softaware\SocialLogin\Model\Provider\ProviderPool;
-use Softaware\SocialLogin\Model\SelfTest\CheckInterface;
-use Softaware\SocialLogin\Model\SelfTest\Reporter;
-use Softaware\SocialLogin\Model\StateStore;
+use CommerceGears\SocialLogin\Model\AuthRequest;
+use CommerceGears\SocialLogin\Model\Provider\AbstractProvider;
+use CommerceGears\SocialLogin\Model\Provider\ProviderPool;
+use CommerceGears\SocialLogin\Model\SelfTest\CheckInterface;
+use CommerceGears\SocialLogin\Model\SelfTest\Reporter;
+use CommerceGears\SocialLogin\Model\StateStore;
 
 /**
  * The Pro providers are registered and build correct authorisation requests (endpoint, state, PKCE, nonce,

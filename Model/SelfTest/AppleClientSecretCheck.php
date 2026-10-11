@@ -1,19 +1,19 @@
 <?php
 /**
- * Softaware Social Login Pro
+ * CommerceGears Social Login Pro
  *
- * @copyright Copyright (c) Softaware Commerce (https://www.softawarecommerce.co.uk/)
+ * @copyright Copyright (c) CommerceGears (https://www.commercegearscommerce.co.uk/)
  */
 declare(strict_types=1);
 
-namespace Softaware\SocialLoginPro\Model\SelfTest;
+namespace CommerceGears\SocialLoginPro\Model\SelfTest;
 
-use Softaware\SocialLogin\Model\Jwt\Base64Url;
-use Softaware\SocialLogin\Model\Jwt\JwtException;
-use Softaware\SocialLogin\Model\Jwt\JwtValidator;
-use Softaware\SocialLogin\Model\SelfTest\CheckInterface;
-use Softaware\SocialLogin\Model\SelfTest\Reporter;
-use Softaware\SocialLoginPro\Model\Jwt\Es256Signer;
+use CommerceGears\SocialLogin\Model\Jwt\Base64Url;
+use CommerceGears\SocialLogin\Model\Jwt\JwtException;
+use CommerceGears\SocialLogin\Model\Jwt\JwtValidator;
+use CommerceGears\SocialLogin\Model\SelfTest\CheckInterface;
+use CommerceGears\SocialLogin\Model\SelfTest\Reporter;
+use CommerceGears\SocialLoginPro\Model\Jwt\Es256Signer;
 
 /**
  * Sign in with Apple client secret: an ES256 JWT signed with a freshly generated P-256 key (no Apple calls).

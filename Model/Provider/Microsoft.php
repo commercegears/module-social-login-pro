@@ -1,16 +1,16 @@
 <?php
 /**
- * Softaware Social Login Pro
+ * CommerceGears Social Login Pro
  *
- * @copyright Copyright (c) Softaware Commerce (https://www.softawarecommerce.co.uk/)
+ * @copyright Copyright (c) CommerceGears (https://www.commercegearscommerce.co.uk/)
  */
 declare(strict_types=1);
 
-namespace Softaware\SocialLoginPro\Model\Provider;
+namespace CommerceGears\SocialLoginPro\Model\Provider;
 
-use Softaware\SocialLogin\Model\AuthRequest;
-use Softaware\SocialLogin\Model\Profile;
-use Softaware\SocialLogin\Model\Provider\AbstractOidcProvider;
+use CommerceGears\SocialLogin\Model\AuthRequest;
+use CommerceGears\SocialLogin\Model\Profile;
+use CommerceGears\SocialLogin\Model\Provider\AbstractOidcProvider;
 
 /**
  * Microsoft identity platform (Entra ID v2.0 endpoint), "common" tenant by default, with PKCE.

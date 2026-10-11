@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <softaware_sociallogin>
+        <commercegears_sociallogin>
             <apple>
                 <enabled>0</enabled>
                 <private_key backend_model="Magento\Config\Model\Config\Backend\Encrypted"/>
@@ -28,6 +28,6 @@
                 <client_secret backend_model="Magento\Config\Model\Config\Backend\Encrypted"/>
                 <sort_order>70</sort_order>
             </amazon>
-        </softaware_sociallogin>
+        </commercegears_sociallogin>
     </default>
 </config>

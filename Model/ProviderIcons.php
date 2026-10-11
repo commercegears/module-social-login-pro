@@ -1,16 +1,16 @@
 <?php
 /**
- * Softaware Social Login Pro
+ * CommerceGears Social Login Pro
  *
- * @copyright Copyright (c) Softaware Commerce (https://www.softawarecommerce.co.uk/)
+ * @copyright Copyright (c) CommerceGears (https://www.commercegearscommerce.co.uk/)
  */
 declare(strict_types=1);
 
-namespace Softaware\SocialLoginPro\Model;
+namespace CommerceGears\SocialLoginPro\Model;
 
 /**
  * Inline SVG brand marks for the Pro providers' buttons, registered in etc/di.xml on
- * Softaware\SocialLogin\ViewModel\ProviderIcons. Marks that are black in the brand guidelines
+ * CommerceGears\SocialLogin\ViewModel\ProviderIcons. Marks that are black in the brand guidelines
  * (Apple, GitHub, the Amazon "a") use currentColor so they turn white on dark buttons.
  */
 class ProviderIcons

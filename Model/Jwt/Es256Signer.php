@@ -1,16 +1,16 @@
 <?php
 /**
- * Softaware Social Login Pro
+ * CommerceGears Social Login Pro
  *
- * @copyright Copyright (c) Softaware Commerce (https://www.softawarecommerce.co.uk/)
+ * @copyright Copyright (c) CommerceGears (https://www.commercegearscommerce.co.uk/)
  */
 declare(strict_types=1);
 
-namespace Softaware\SocialLoginPro\Model\Jwt;
+namespace CommerceGears\SocialLoginPro\Model\Jwt;
 
-use Softaware\SocialLogin\Model\Jwt\Base64Url;
-use Softaware\SocialLogin\Model\Jwt\Der;
-use Softaware\SocialLogin\Model\Jwt\JwtException;
+use CommerceGears\SocialLogin\Model\Jwt\Base64Url;
+use CommerceGears\SocialLogin\Model\Jwt\Der;
+use CommerceGears\SocialLogin\Model\Jwt\JwtException;
 
 /**
  * Creates ES256-signed JWTs, e.g. the client secret for Sign in with Apple (from the .p8 key).

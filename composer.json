@@ -1,6 +1,6 @@
 {
-    "name": "softaware/module-social-login-pro",
-    "description": "Sign in and register with Apple, Microsoft, LinkedIn, Amazon and GitHub: add-on for Softaware Social Login for Magento 2 (Luma and Hyvä). OAuth 2.0 / OpenID Connect implemented without third-party SDKs.",
+    "name": "commercegears/module-social-login-pro",
+    "description": "Sign in and register with Apple, Microsoft, LinkedIn, Amazon and GitHub: add-on for CommerceGears Social Login for Magento 2 (Luma and Hyvä). OAuth 2.0 / OpenID Connect implemented without third-party SDKs.",
     "type": "magento2-module",
     "license": "proprietary",
     "require": {
@@ -8,15 +8,18 @@
         "ext-json": "*",
         "ext-openssl": "*",
         "magento/framework": "~103.0.7",
-        "softaware/module-core": "^1.3",
-        "softaware/module-social-login": "^1.3"
+        "commercegears/module-core": "^2.0",
+        "commercegears/module-social-login": "^2.0"
     },
     "autoload": {
         "files": [
             "registration.php"
         ],
         "psr-4": {
-            "Softaware\\SocialLoginPro\\": ""
+            "CommerceGears\\SocialLoginPro\\": ""
         }
+    },
+    "replace": {
+        "softaware/module-social-login-pro": "*"
     }
 }

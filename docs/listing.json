@@ -1,5 +1,5 @@
 {
-    "tagline": "Add Apple, Microsoft, LinkedIn, Amazon and GitHub sign-in to the free Softaware Social Login, with the same buttons, settings and account rules.",
+    "tagline": "Add Apple, Microsoft, LinkedIn, Amazon and GitHub sign-in to the free CommerceGears Social Login, with the same buttons, settings and account rules.",
     "key_features": [
         "Sign in with Apple",
         "Microsoft personal, work and school accounts",
@@ -88,5 +88,5 @@
             ]
         }
     ],
-    "related": ["softaware/module-social-login"]
+    "related": ["commercegears/module-social-login"]
 }

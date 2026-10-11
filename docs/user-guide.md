@@ -1,12 +1,12 @@
 # Social Login Pro for Magento 2: User Guide
 
-Social Login Pro adds **Apple, Microsoft, LinkedIn, Amazon and GitHub** to Softaware Social Login, next to Google,
+Social Login Pro adds **Apple, Microsoft, LinkedIn, Amazon and GitHub** to CommerceGears Social Login, next to Google,
 Facebook and X. This guide covers installation, the setup of each provider and compatibility. For everything else
 (where the buttons appear, popup or redirect, accounts, Connected Accounts, admin tools, CLI, privacy and
 troubleshooting) see the Social Login user guide; it applies to these providers too.
 
-- Product page: https://softawarecommerce.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
-- Social Login (free, required): https://softawarecommerce.com/shop/magento-2-extensions/social-login-for-magento-2/
+- Product page: https://commercegears.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
+- Social Login (free, required): https://commercegears.com/shop/magento-2-extensions/social-login-for-magento-2/
 - Changelog: [CHANGELOG.md](../CHANGELOG.md) · Questions: [FAQ](faq.md)
 
 ![Sign-in page with all providers](images/sign-in-luma.png)
@@ -18,18 +18,18 @@ troubleshooting) see the Social Login user guide; it applies to these providers 
 | Magento | Open Source or Adobe Commerce 2.4.7 to 2.4.9 |
 | PHP | 8.2 to 8.5 with `ext-openssl` and `ext-json` |
 | Themes | Luma, Blank and themes based on them; Hyvä 1.3+ |
-| Other | `softaware/module-social-login` 1.3 or later and `softaware/module-core` (installed automatically) |
+| Other | `commercegears/module-social-login` 1.3 or later and `commercegears/module-core` (installed automatically) |
 
 ## 2. Installation
 
-With Composer, using the Composer keys from your account on softawarecommerce.com (My account > Composer keys,
-https://softawarecommerce.com/my-modules/keys/). If the SoftAware repository is already configured for Social Login, only the `composer require`
+With Composer, using the Composer keys from your account on commercegears.com (My account > Composer keys,
+https://commercegears.com/my-modules/keys/). If the CommerceGears repository is already configured for Social Login, only the `composer require`
 line is needed:
 
 ```bash
-composer config repositories.softaware composer https://repo.softawarecommerce.com
-composer config --auth http-basic.repo.softawarecommerce.com PUBLIC_KEY PRIVATE_KEY
-composer require softaware/module-social-login-pro
+composer config repositories.commercegears composer https://repo.commercegears.com
+composer config --auth http-basic.repo.commercegears.com PUBLIC_KEY PRIVATE_KEY
+composer require commercegears/module-social-login-pro
 bin/magento setup:upgrade
 bin/magento setup:di:compile            # production mode only
 bin/magento setup:static-content:deploy # production mode only
@@ -38,11 +38,11 @@ bin/magento cache:flush
 
 The module has no templates or styles of its own, so no Hyvä Tailwind build is needed for it.
 
-To update later: `composer update softaware/module-social-login-pro`, then the same `bin/magento` commands.
+To update later: `composer update commercegears/module-social-login-pro`, then the same `bin/magento` commands.
 
 ## 3. Where the settings are
 
-**Stores > Configuration > Softaware > Social Login** (also under **Softaware > Social Login > Configuration**).
+**Stores > Configuration > CommerceGears > Social Login** (also under **CommerceGears > Social Login > Configuration**).
 Social Login Pro adds the groups **Apple**, **Microsoft**, **GitHub**, **LinkedIn** and **Amazon** between Social
 Login's provider groups. Social Login's **General > Enabled** must be **Yes**.
 
@@ -119,7 +119,7 @@ LinkedIn (60), Amazon (70), X (80). Change **Sort Order** to rearrange.
 ## 6. Checking the installation
 
 ```bash
-bin/magento softaware:social-login:self-test
+bin/magento commercegears:social-login:self-test
 ```
 
 The output starts with the registered providers (it should list `apple, microsoft, github, linkedin, amazon`) and
@@ -127,7 +127,7 @@ includes the sections "Social Login Pro providers" and "Sign in with Apple clien
 
 ## 7. Compatibility
 
-- Softaware Social Login 1.3 or later (required), Softaware Customer Approval (optional, via Social Login).
+- CommerceGears Social Login 1.3 or later (required), CommerceGears Customer Approval (optional, via Social Login).
 - Magento Open Source / Adobe Commerce 2.4.7 to 2.4.9, PHP 8.2 to 8.5.
 - Luma, Blank and Luma-based themes; Hyvä 1.3+ (tested with 1.5). The Hyvä checkout uses the Luma checkout
   fallback, so the checkout buttons are the Luma ones.
@@ -135,8 +135,8 @@ includes the sections "Social Login Pro providers" and "Sign in with Apple clien
 ## 8. Uninstall
 
 ```bash
-bin/magento module:disable Softaware_SocialLoginPro
-composer remove softaware/module-social-login-pro
+bin/magento module:disable CommerceGears_SocialLoginPro
+composer remove commercegears/module-social-login-pro
 bin/magento setup:upgrade
 ```
 

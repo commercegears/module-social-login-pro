@@ -1,73 +1,73 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <!-- Providers, added to Softaware Social Login's provider pool -->
-    <type name="Softaware\SocialLogin\Model\Provider\ProviderPool">
+    <!-- Providers, added to CommerceGears Social Login's provider pool -->
+    <type name="CommerceGears\SocialLogin\Model\Provider\ProviderPool">
         <arguments>
             <argument name="providers" xsi:type="array">
-                <item name="apple" xsi:type="object">Softaware\SocialLoginPro\Model\Provider\Apple</item>
-                <item name="microsoft" xsi:type="object">Softaware\SocialLoginPro\Model\Provider\Microsoft</item>
-                <item name="github" xsi:type="object">Softaware\SocialLoginPro\Model\Provider\Github</item>
-                <item name="linkedin" xsi:type="object">Softaware\SocialLoginPro\Model\Provider\LinkedIn</item>
-                <item name="amazon" xsi:type="object">Softaware\SocialLoginPro\Model\Provider\Amazon</item>
+                <item name="apple" xsi:type="object">CommerceGears\SocialLoginPro\Model\Provider\Apple</item>
+                <item name="microsoft" xsi:type="object">CommerceGears\SocialLoginPro\Model\Provider\Microsoft</item>
+                <item name="github" xsi:type="object">CommerceGears\SocialLoginPro\Model\Provider\Github</item>
+                <item name="linkedin" xsi:type="object">CommerceGears\SocialLoginPro\Model\Provider\LinkedIn</item>
+                <item name="amazon" xsi:type="object">CommerceGears\SocialLoginPro\Model\Provider\Amazon</item>
             </argument>
         </arguments>
     </type>
 
     <!-- Button icons -->
-    <type name="Softaware\SocialLogin\ViewModel\ProviderIcons">
+    <type name="CommerceGears\SocialLogin\ViewModel\ProviderIcons">
         <arguments>
             <argument name="icons" xsi:type="array">
-                <item name="apple" xsi:type="const">Softaware\SocialLoginPro\Model\ProviderIcons::APPLE</item>
-                <item name="microsoft" xsi:type="const">Softaware\SocialLoginPro\Model\ProviderIcons::MICROSOFT</item>
-                <item name="github" xsi:type="const">Softaware\SocialLoginPro\Model\ProviderIcons::GITHUB</item>
-                <item name="linkedin" xsi:type="const">Softaware\SocialLoginPro\Model\ProviderIcons::LINKEDIN</item>
-                <item name="amazon" xsi:type="const">Softaware\SocialLoginPro\Model\ProviderIcons::AMAZON</item>
+                <item name="apple" xsi:type="const">CommerceGears\SocialLoginPro\Model\ProviderIcons::APPLE</item>
+                <item name="microsoft" xsi:type="const">CommerceGears\SocialLoginPro\Model\ProviderIcons::MICROSOFT</item>
+                <item name="github" xsi:type="const">CommerceGears\SocialLoginPro\Model\ProviderIcons::GITHUB</item>
+                <item name="linkedin" xsi:type="const">CommerceGears\SocialLoginPro\Model\ProviderIcons::LINKEDIN</item>
+                <item name="amazon" xsi:type="const">CommerceGears\SocialLoginPro\Model\ProviderIcons::AMAZON</item>
             </argument>
         </arguments>
     </type>
 
-    <!-- bin/magento softaware:social-login:self-test: Pro checks -->
-    <type name="Softaware\SocialLogin\Console\Command\SelfTestCommand">
+    <!-- bin/magento commercegears:social-login:self-test: Pro checks -->
+    <type name="CommerceGears\SocialLogin\Console\Command\SelfTestCommand">
         <arguments>
             <argument name="checks" xsi:type="array">
-                <item name="pro_providers" xsi:type="object">Softaware\SocialLoginPro\Model\SelfTest\ProvidersCheck</item>
-                <item name="apple_client_secret" xsi:type="object">Softaware\SocialLoginPro\Model\SelfTest\AppleClientSecretCheck</item>
+                <item name="pro_providers" xsi:type="object">CommerceGears\SocialLoginPro\Model\SelfTest\ProvidersCheck</item>
+                <item name="apple_client_secret" xsi:type="object">CommerceGears\SocialLoginPro\Model\SelfTest\AppleClientSecretCheck</item>
             </argument>
         </arguments>
     </type>
 
-    <type name="Softaware\SocialLoginPro\Model\SelfTest\ProvidersCheck">
+    <type name="CommerceGears\SocialLoginPro\Model\SelfTest\ProvidersCheck">
         <arguments>
-            <argument name="providerPool" xsi:type="object">Softaware\SocialLogin\Model\Provider\ProviderPool\Proxy</argument>
+            <argument name="providerPool" xsi:type="object">CommerceGears\SocialLogin\Model\Provider\ProviderPool\Proxy</argument>
         </arguments>
     </type>
 
     <!-- Admin config: callback URL shown under each provider's "Enabled" switch -->
-    <virtualType name="Softaware\SocialLoginPro\Model\Config\Comment\AppleCallbackUrl" type="Softaware\SocialLogin\Model\Config\Comment\CallbackUrl">
+    <virtualType name="CommerceGears\SocialLoginPro\Model\Config\Comment\AppleCallbackUrl" type="CommerceGears\SocialLogin\Model\Config\Comment\CallbackUrl">
         <arguments>
             <argument name="providerCode" xsi:type="string">apple</argument>
             <argument name="hint" xsi:type="string">Apple Developer &gt; Certificates, Identifiers &amp; Profiles: create a Services ID with "Sign in with Apple", add your domain and this URL as Return URL, and create a key with "Sign in with Apple" enabled.</argument>
         </arguments>
     </virtualType>
-    <virtualType name="Softaware\SocialLoginPro\Model\Config\Comment\MicrosoftCallbackUrl" type="Softaware\SocialLogin\Model\Config\Comment\CallbackUrl">
+    <virtualType name="CommerceGears\SocialLoginPro\Model\Config\Comment\MicrosoftCallbackUrl" type="CommerceGears\SocialLogin\Model\Config\Comment\CallbackUrl">
         <arguments>
             <argument name="providerCode" xsi:type="string">microsoft</argument>
             <argument name="hint" xsi:type="string">Microsoft Entra admin centre &gt; Entra ID &gt; App registrations: register an app for "Any Entra ID Tenant + Personal Microsoft accounts", add this URL as a "Web" redirect URI under Authentication and create a client secret under Certificates &amp; secrets.</argument>
         </arguments>
     </virtualType>
-    <virtualType name="Softaware\SocialLoginPro\Model\Config\Comment\GithubCallbackUrl" type="Softaware\SocialLogin\Model\Config\Comment\CallbackUrl">
+    <virtualType name="CommerceGears\SocialLoginPro\Model\Config\Comment\GithubCallbackUrl" type="CommerceGears\SocialLogin\Model\Config\Comment\CallbackUrl">
         <arguments>
             <argument name="providerCode" xsi:type="string">github</argument>
             <argument name="hint" xsi:type="string">GitHub &gt; Settings &gt; Developer settings &gt; OAuth Apps: create an app and enter this URL as "Authorization callback URL".</argument>
         </arguments>
     </virtualType>
-    <virtualType name="Softaware\SocialLoginPro\Model\Config\Comment\LinkedinCallbackUrl" type="Softaware\SocialLogin\Model\Config\Comment\CallbackUrl">
+    <virtualType name="CommerceGears\SocialLoginPro\Model\Config\Comment\LinkedinCallbackUrl" type="CommerceGears\SocialLogin\Model\Config\Comment\CallbackUrl">
         <arguments>
             <argument name="providerCode" xsi:type="string">linkedin</argument>
             <argument name="hint" xsi:type="string">LinkedIn Developers &gt; your app &gt; Products: add "Sign In with LinkedIn using OpenID Connect"; under Auth add this URL to "Authorized redirect URLs".</argument>
         </arguments>
     </virtualType>
-    <virtualType name="Softaware\SocialLoginPro\Model\Config\Comment\AmazonCallbackUrl" type="Softaware\SocialLogin\Model\Config\Comment\CallbackUrl">
+    <virtualType name="CommerceGears\SocialLoginPro\Model\Config\Comment\AmazonCallbackUrl" type="CommerceGears\SocialLogin\Model\Config\Comment\CallbackUrl">
         <arguments>
             <argument name="providerCode" xsi:type="string">amazon</argument>
             <argument name="hint" xsi:type="string">Amazon Developer Console &gt; Login with Amazon: create a security profile and add this URL under Web Settings &gt; "Allowed Return URLs".</argument>

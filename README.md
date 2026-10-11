@@ -1,15 +1,15 @@
-# Softaware Social Login Pro for Magento 2
+# CommerceGears Social Login Pro for Magento 2
 
-Add-on for Softaware Social Login (`softaware/module-social-login`) that lets customers sign in and register
+Add-on for CommerceGears Social Login (`commercegears/module-social-login`) that lets customers sign in and register
 with **Apple, Microsoft, LinkedIn, Amazon and GitHub**, next to Google, Facebook and X from Social Login. Like
 Social Login, it implements OAuth 2.0 and OpenID Connect directly on Magento's HTTP client and PHP's OpenSSL
 extension; no provider SDKs or JWT libraries are installed. Works with Luma-based themes and Hyvä.
 
-Package `softaware/module-social-login-pro`, module `Softaware_SocialLoginPro`.
+Package `commercegears/module-social-login-pro`, module `CommerceGears_SocialLoginPro`.
 
 ![Sign-in page with all providers](docs/images/sign-in-luma.png)
 
-- Product page: https://softawarecommerce.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
+- Product page: https://commercegears.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
 - [User guide](docs/user-guide.md) (installation, provider setup, compatibility) · [FAQ](docs/faq.md) ·
   [Changelog](CHANGELOG.md)
 
@@ -32,14 +32,14 @@ Package `softaware/module-social-login-pro`, module `Softaware_SocialLoginPro`.
 - Everything else comes from Social Login and works for these providers too: popup or redirect, all button places,
   widget and layout block, button style and colour, account matching, Create New Accounts, Connected Accounts,
   Linked Accounts grid, customer tab, CLI, Customer Approval integration, GDPR clean-up, Luma and Hyvä.
-- **Self-test**: `bin/magento softaware:social-login:self-test` additionally checks the five providers'
+- **Self-test**: `bin/magento commercegears:social-login:self-test` additionally checks the five providers'
   authorisation requests (endpoint, state, PKCE, nonce, form_post) and the Apple client secret (ES256 signature,
   key pasted without line breaks, invalid and non-P-256 keys rejected). No calls to the providers.
 
 ## Configuration
 
-The providers are added as groups to Social Login's section: Stores > Configuration > Softaware > Social Login
-(`softaware_sociallogin/<code>/...`). Access is controlled by Social Login's "Configuration" ACL resource.
+The providers are added as groups to Social Login's section: Stores > Configuration > CommerceGears > Social Login
+(`commercegears_sociallogin/<code>/...`). Access is controlled by Social Login's "Configuration" ACL resource.
 
 | Group | Settings |
 | --- | --- |
@@ -67,7 +67,7 @@ Register the callback URL shown under each provider's **Enabled** field exactly 
 
 ## Compatibility
 
-- Requires `softaware/module-social-login` ^1.3 and `softaware/module-core` ^1.0.
+- Requires `commercegears/module-social-login` ^1.3 and `commercegears/module-core` ^1.0.
 - Magento Open Source / Adobe Commerce 2.4.7 to 2.4.9, PHP 8.2 to 8.5, ext-openssl.
 - Luma, Blank and themes based on them; Hyvä 1.3+ (tested with Hyvä 1.5). The module has no templates of its own;
   the buttons are rendered by Social Login's Luma and Hyvä templates.
@@ -84,6 +84,6 @@ Register the callback URL shown under each provider's **Enabled** field exactly 
 
 ## Uninstalling
 
-`composer remove softaware/module-social-login-pro`, then `bin/magento setup:upgrade`. Settings and existing links
+`composer remove commercegears/module-social-login-pro`, then `bin/magento setup:upgrade`. Settings and existing links
 are kept; Social Login shows links of these providers with their provider code, and they can be removed in the
 admin or by the customer.

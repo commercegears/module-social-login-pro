@@ -1,20 +1,20 @@
 <?php
 /**
- * Softaware Social Login Pro
+ * CommerceGears Social Login Pro
  *
- * @copyright Copyright (c) Softaware Commerce (https://www.softawarecommerce.co.uk/)
+ * @copyright Copyright (c) CommerceGears (https://www.commercegearscommerce.co.uk/)
  */
 declare(strict_types=1);
 
-namespace Softaware\SocialLoginPro\Model\Provider;
+namespace CommerceGears\SocialLoginPro\Model\Provider;
 
-use Softaware\SocialLogin\Exception\SocialLoginException;
-use Softaware\SocialLogin\Model\AuthRequest;
-use Softaware\SocialLogin\Model\Jwt\JwtException;
-use Softaware\SocialLogin\Model\Profile;
-use Softaware\SocialLogin\Model\Provider\AbstractOidcProvider;
-use Softaware\SocialLogin\Model\Provider\ProviderContext;
-use Softaware\SocialLoginPro\Model\Jwt\Es256Signer;
+use CommerceGears\SocialLogin\Exception\SocialLoginException;
+use CommerceGears\SocialLogin\Model\AuthRequest;
+use CommerceGears\SocialLogin\Model\Jwt\JwtException;
+use CommerceGears\SocialLogin\Model\Profile;
+use CommerceGears\SocialLogin\Model\Provider\AbstractOidcProvider;
+use CommerceGears\SocialLogin\Model\Provider\ProviderContext;
+use CommerceGears\SocialLoginPro\Model\Jwt\Es256Signer;
 
 /**
  * Sign in with Apple. The client secret is an ES256 JWT signed with the .p8 key; Apple posts the
