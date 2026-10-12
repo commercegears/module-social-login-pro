@@ -5,8 +5,8 @@ Facebook and X. This guide covers installation, the setup of each provider and c
 (where the buttons appear, popup or redirect, accounts, Connected Accounts, admin tools, CLI, privacy and
 troubleshooting) see the Social Login user guide; it applies to these providers too.
 
-- Product page: https://commercegears.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
-- Social Login (free, required): https://commercegears.com/shop/magento-2-extensions/social-login-for-magento-2/
+- Product page: https://commercegears.com/magento-2-extensions/social-login-pro-for-magento-2/
+- Social Login (free, required): https://commercegears.com/magento-2-extensions/social-login-for-magento-2/
 - Changelog: [CHANGELOG.md](../CHANGELOG.md) · Questions: [FAQ](faq.md)
 
 ![Sign-in page with all providers](images/sign-in-luma.png)

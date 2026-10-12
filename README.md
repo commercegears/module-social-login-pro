@@ -9,7 +9,7 @@ Package `commercegears/module-social-login-pro`, module `CommerceGears_SocialLog
 
 ![Sign-in page with all providers](docs/images/sign-in-luma.png)
 
-- Product page: https://commercegears.com/shop/magento-2-extensions/social-login-pro-for-magento-2/
+- Product page: https://commercegears.com/magento-2-extensions/social-login-pro-for-magento-2/
 - [User guide](docs/user-guide.md) (installation, provider setup, compatibility) · [FAQ](docs/faq.md) ·
   [Changelog](CHANGELOG.md)
 
