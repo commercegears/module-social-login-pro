@@ -15,8 +15,8 @@ troubleshooting) see the Social Login user guide; it applies to these providers 
 
 | | |
 | --- | --- |
-| Magento | Open Source or Adobe Commerce 2.4.7 to 2.4.9 |
-| PHP | 8.2 to 8.5 with `ext-openssl` and `ext-json` |
+| Magento | Open Source or Adobe Commerce 2.4.6 to 2.4.9 |
+| PHP | 8.2 to 8.5 with `ext-openssl` and `ext-json` (Magento 2.4.6: PHP 8.2) |
 | Themes | Luma, Blank and themes based on them; Hyvä 1.3+ |
 | Other | `commercegears/module-social-login` 1.3 or later and `commercegears/module-core` (installed automatically) |
 
@@ -128,7 +128,7 @@ includes the sections "Social Login Pro providers" and "Sign in with Apple clien
 ## 7. Compatibility
 
 - CommerceGears Social Login 1.3 or later (required), CommerceGears Customer Approval (optional, via Social Login).
-- Magento Open Source / Adobe Commerce 2.4.7 to 2.4.9, PHP 8.2 to 8.5.
+- Magento Open Source / Adobe Commerce 2.4.6 to 2.4.9, PHP 8.2 to 8.5 (Magento 2.4.6: PHP 8.2).
 - Luma, Blank and Luma-based themes; Hyvä 1.3+ (tested with 1.5). The Hyvä checkout uses the Luma checkout
   fallback, so the checkout buttons are the Luma ones.
 
