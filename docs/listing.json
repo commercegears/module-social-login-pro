@@ -88,5 +88,28 @@
             ]
         }
     ],
-    "related": ["commercegears/module-social-login"]
+    "related": [
+        "commercegears/module-social-login"
+    ],
+    "demo": {
+        "storefront": [
+            {
+                "label": "Luma sign-in page with guided tour",
+                "url": "https://demo.commercegears.com/customer/account/login/?tour=social-login-pro",
+                "image": "docs/images/sign-in-luma.png"
+            },
+            {
+                "label": "Hyvä sign-in page with guided tour",
+                "url": "https://demo.commercegears.com/hyva/customer/account/login/?tour=social-login-pro",
+                "image": "docs/images/sign-in-hyva.png"
+            }
+        ],
+        "admin": [
+            {
+                "label": "Admin panel",
+                "url": "https://demo.commercegears.com/try-admin/social-login-pro",
+                "image": "docs/images/admin-apple.png"
+            }
+        ]
+    }
 }
